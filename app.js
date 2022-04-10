@@ -1,10 +1,10 @@
 const show = document.querySelector('#show')
 
-fetch('file:///Users/theachhim/learning-apis/learning-apis/webscraper.html')
-    .then(response => response.json())
+fetch('http://localhost:8000/results')
+    .then(response => {return response.json()})
     .then (data => {
-        data.articles.forEach(element => {
-            const eachItem = `<div><h3>` + element.title `</h3><p>` + element.fullURl + `</p></div>` 
-            show.insertAdjacentHTML("beforeend", eachItem)
+        data.forEach(champion => {
+            const eachChamp =  `<h1>` + champion.title +`</h1>`
+            show.insertAdjacentHTML("beforeend", eachChamp)
         })
     }) .catch(err => console.log(err))
