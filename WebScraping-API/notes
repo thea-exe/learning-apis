@@ -1,0 +1,5 @@
+$ npm i nodemon --> install nodemon
+$ npm init --> store all our packages in one place
+$ npm i express--> a backend framework for nodejs that listens to paths/port 
+$ npm i cheerio --> a package to pick out html elements on a webpage, it parses markup
+$ npm i axios --> a promise-based HTTP client for browser and nodejs. We can use it to get, post, put, and delete data
